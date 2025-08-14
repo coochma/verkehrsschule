@@ -695,3 +695,17 @@ button[type="submit"] {
   font-weight: bold;
   font-size: 1rem;
 }
+
+/* Global visual scale + fallback */
+body { 
+  zoom: 1.15;              /* +15% у Chrome/Edge/Opera */
+}
+
+@supports not (zoom: 1) {  /* Firefox та інші */
+  body {
+    transform: scale(1.15);
+    transform-origin: top left;
+    width: calc(100% / 1.15); /* щоб не з’явився горизонтальний скрол */
+  }
+  html, body { overflow-x: hidden; }
+}
