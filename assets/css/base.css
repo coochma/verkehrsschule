@@ -15,8 +15,9 @@
 }
 
 html{
-  font-size: 18px;
-},
+  font-size: 18px
+  zoom: 1.55;
+}
 body {
   margin: 0;
   padding: 0
@@ -24,9 +25,6 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
-  font-size: 17px;
-  transform: scale(1.5);
-  transform-origin: top center;
 }
 
 .container {
