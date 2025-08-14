@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Übersicht – Verkehrsschule Panketal</title>
+  <meta name="description" content="Verkehrsschule Panketal – Moderne Fahrschule in Panketal.">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand__logo">
+          <img src="assets/img/logo-new.png" alt="Verkehrsschule Panketal">
+        </div>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html">Übersicht</a>
+        <a href="kurse.html">Kurse & Preise</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="anfahrt.html">Anfahrt</a>
+        <a href="leitbild.html">Leitbild</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a class="btn btn--secondary" href="tel:+493012345678">Anrufen</a>
+        <a class="btn btn--primary" href="#" onclick="waMessage()">WhatsApp</a>
+      </nav>
+      <button class="mobile-toggle">
+        <svg fill="none" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        Menü
+      </button>
+
+    </div>
+  </header>
+  <main>
+    <div class="container">
+
+      <section class="hero">
+        <div class="hero__wrap">
+          <div>
+            <h1 class="hero__title">Ihre Fahrschule in Panketal – modern & persönlich.</h1>
+            <p class="hero__subtitle">Erfahrene Fahrlehrer, flexible Termine und klare Vorbereitung auf die Prüfung –
+              für Auto & Motorrad.</p>
+            <div style="display:flex; gap:.8rem; flex-wrap:wrap">
+              <a class="btn btn--primary" href="#kontakt">Jetzt anmelden</a>
+              <a class="btn btn--secondary" href="tel:+493012345678">Anrufen</a>
+            </div>
+            <div class="badges">
+              <span class="badge">B · B197 · A · AM</span>
+              <span class="badge">Kompetent & freundlich</span>
+              <span class="badge">Zentral in Panketal</span>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img src="assets/img/hero.jpg" alt="Verkehrsschule Panketal – Autos & Motorräder">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="vorteile">
+        <h2 class="section__title">Vorteile</h2>
+        <p class="section__desc">Was uns auszeichnet – damit Sie schneller ans Ziel kommen.</p>
+        <div class="grid-3">
+          <div class="feature">
+            <h3>Erfahrene Fahrlehrer</h3>
+            <p>Ruhig, geduldig und praxisnah – ideal für Einsteiger.</p>
+          </div>
+          <div class="feature">
+            <h3>Flexible Zeiten</h3>
+            <p>Theorie & Fahrstunden nach Vereinbarung.</p>
+          </div>
+          <div class="feature">
+            <h3>Moderner Unterricht</h3>
+            <p>Klare Struktur, verständliche Erklärungen, sichere Prüfung.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="kurse">
+        <h2 class="section__title">Kurse & Preise</h2>
+        <p class="section__desc">Transparente Preise – je nach benötigten Fahrstunden.</p>
+        <div class="grid-3">
+          <div class="kurs">
+            <h3>Klasse B</h3>
+            <div class="price">ab 1.149€*</div><small>*Richtwert</small><a class="btn btn--primary"
+              href="kurse.html#b">Mehr Info</a>
+          </div>
+          <div class="kurs">
+            <h3>B197 (Automatik)</h3>
+            <div class="price">ab 1.249€*</div><small>mit Schaltkompetenz</small><a class="btn btn--primary"
+              href="kurse.html#b197">Mehr Info</a>
+          </div>
+          <div class="kurs">
+            <h3>Motorrad A</h3>
+            <div class="price">ab 949€*</div><small>A/A2/AM</small><a class="btn btn--primary" href="kurse.html#a">Mehr
+              Info</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="bewertungen">
+        <h2 class="section__title">Bewertungen</h2>
+        <div class="reviews">
+          <div class="review">
+            <div class="who"><span class="avatar"></span><strong>Lea S.</strong></div>
+            <p>Sehr freundlich und gut organisiert. Prüfung sofort bestanden.</p>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar"></span><strong>Tom H.</strong></div>
+            <p>Geduldige Fahrlehrer, klare Tipps. Empfehlenswert!</p>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar"></span><strong>Ivan M.</strong></div>
+            <p>Motorradtraining top – sicher und praxisnah.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="kontakt">
+        <h2 class="section__title">Kontakt & Anmeldung</h2>
+        <div class="contact">
+          <div class="card">
+            <form id="contact-form" class="form">
+              <input class="input" name="name" placeholder="Ihr Name" required>
+              <input class="input" name="telefon" placeholder="Telefon (für Rückruf)" required>
+              <select class="select" name="kurs" required>
+                <option value="">Kurs wählen</option>
+                <option>B</option>
+                <option>B197</option>
+                <option>A</option>
+                <option>AM</option>
+              </select>
+              <textarea class="textarea" name="nachricht" placeholder="Nachricht (optional)"></textarea>
+              <button class="btn btn--primary" type="submit">Anfrage senden</button>
+              <a class="btn btn--secondary" href="#" onclick="waMessage()">oder per WhatsApp</a>
+            </form>
+            <div style="margin-top:10px; color:var(--muted); font-size:14px">
+              Öffnungszeiten: Mo–Do 14:00–18:00 · Fr 14:00–16:00 (anpassbar)
+            </div>
+          </div>
+          <div class="map">
+            <iframe title="Karte" width="100%" height="100%" style="border:0" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10341.257!2d13.528!3d52.635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850a5d3e3abf7%3A0x0!2sPanketal!5e0!3m2!1sde!2sde!4v0000000"></iframe>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        © 2025 Verkehrsschule Panketal · Bahnhofstraße 1, 16341 Panketal ·
+        <a href="tel:+493012345678">+49 30 12345678</a> ·
+        <a href="mailto:info@verkehrsschule-panketal.de">info@verkehrsschule-panketal.de</a>
+      </div>
+      <div style="display:flex; gap:1rem">
+        <a href="leitbild.html">Leitbild</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/base.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+
+</html>
