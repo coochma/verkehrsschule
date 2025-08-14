@@ -698,14 +698,14 @@ button[type="submit"] {
 
 /* Global visual scale + fallback */
 body { 
-  zoom: 1.15;              /* +15% у Chrome/Edge/Opera */
+  zoom: 1.45;              /* +15% у Chrome/Edge/Opera */
 }
 
 @supports not (zoom: 1) {  /* Firefox та інші */
   body {
-    transform: scale(1.15);
+    transform: scale(1.45);
     transform-origin: top left;
-    width: calc(100% / 1.15); /* щоб не з’явився горизонтальний скрол */
+    width: calc(100% / 1.45); /* щоб не з’явився горизонтальний скрол */
   }
   html, body { overflow-x: hidden; }
 }
