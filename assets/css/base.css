@@ -697,15 +697,19 @@ button[type="submit"] {
 }
 
 /* Global visual scale + fallback */
-body { 
-  zoom: 1.45;              /* +15% у Chrome/Edge/Opera */
+/* Desktop-only scale (не чіпає мобілку) */
+@media (min-width: 992px) {
+  body { zoom: 1.48; } /* підбери: 1.12–1.25 */
 }
 
-@supports not (zoom: 1) {  /* Firefox та інші */
-  body {
-    transform: scale(1.45);
-    transform-origin: top left;
-    width: calc(100% / 1.45); /* щоб не з’явився горизонтальний скрол */
+/* Firefox fallback */
+@supports not (zoom: 1) {
+  @media (min-width: 992px) {
+    body {
+      transform: scale(1.48);
+      transform-origin: top left;
+      width: calc(100% / 1.48);
+    }
+    html, body { overflow-x: hidden; }
   }
-  html, body { overflow-x: hidden; }
 }
